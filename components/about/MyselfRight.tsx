@@ -3,6 +3,7 @@ import React from 'react'
 import { useRecoilValue } from 'recoil'
 import { AiFillGithub,AiFillInstagram,AiTwotoneMail,AiOutlineTwitter,AiFillWechat } from 'react-icons/ai'
 import Image from 'next/image'
+import Link from 'next/link'
 
 type Props = {}
 
@@ -28,25 +29,25 @@ const MyselfRight = (props: Props) => {
             <div className='flex gap-16 overflow-scroll w-[220px] mt-5 
                             md:flex-col  md:h-[600px] md:w-[100px]'
             >
-                <button>
+                <Link href={'https://github.com/pejoyjp'}>
                     <AiFillGithub size={80}/>
-                </button>
+                </Link>
 
-                <button>
+                <Link href={'https://www.instagram.com/pejoyjp/'}>
                     <AiFillInstagram size={80}/>
-                </button>
+                </Link>
 
-                <button>
+                <Link href={'/'}>
                     <AiOutlineTwitter size={80}/>
-                </button>
+                </Link>
 
-                <button>
+                <Link href={'/'}>
                     <AiFillWechat size={80}/>
-                </button>
+                </Link>
 
-                <button>
+                <Link href={'mailto: jinpeng0206@gmail.com'}>
                     <AiTwotoneMail size={80}/>
-                </button>
+                </Link>
             </div>
         </div>
         

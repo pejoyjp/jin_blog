@@ -22,6 +22,7 @@ function Drawer() {
 
       {showDrawer && (
         <div
+          onClick={()=>setShowDrawer(false)}
           className="fixed z-40 top-0 left-0 w-full h-full bg-black opacity-50"
           
         />
@@ -34,9 +35,7 @@ function Drawer() {
             showDrawer ? 'translate-x-0' : '-translate-x-full'
           }`}
       >
-        <div className="p-4">
-          <h2 className="text-lg font-semibold">Drawer</h2>
-        </div>
+       
         <div className="p-4">
           {/* Drawer content goes here */}
           <Appbar col/>

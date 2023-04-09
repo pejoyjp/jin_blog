@@ -12,7 +12,7 @@ const Appbar:React.FC<Props> = ({col}) => {
   
 
   return (
-    <nav className={`${col?'block':'md:block hidden'}`}>
+    <nav className={`${col?'block':'md:block hidden'} ${col?'text-black':''}`}>
       <ul className={`flex ${col?'flex-col gap-2':'gap-12'}`}>
         <li className='hover:underline'>
           <Link href="/">

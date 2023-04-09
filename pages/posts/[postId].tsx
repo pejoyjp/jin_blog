@@ -5,7 +5,7 @@ import ReactLoading from 'react-loading'
 
 type Props = {}
 
-const postView = (props: Props) => {
+const PostView = (props: Props) => {
   const router = useRouter()
   const {postId} = router.query
   const {data:post,isLoading} = usePost(postId as string)
@@ -36,4 +36,4 @@ const postView = (props: Props) => {
   )
 }
 
-export default postView
+export default PostView
